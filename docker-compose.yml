@@ -1,0 +1,9 @@
+version: '3'
+services:
+  api:
+    build: .
+    ports:
+      - "192.168.0.39:4242:4242"
+    volumes:
+      - ./app:/code/app
+    restart: always
